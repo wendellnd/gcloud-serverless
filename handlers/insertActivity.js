@@ -11,6 +11,6 @@ module.exports = async function insertActivity(event) {
     console.log(results);
   } catch (err) {
     console.error(err);
-    console.log(err.response);
+    console.log(JSON.stringify(err.response));
   }
 };
