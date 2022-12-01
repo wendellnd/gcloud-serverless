@@ -1,1 +1,1 @@
-exports.receiveAction = require("./handlers/receiveAction");
+exports.receiveActivity = require("./handlers/receiveActivity");
