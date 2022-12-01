@@ -1,4 +1,4 @@
-const BigQuery = require("@google-cloud/bigquery");
+const BigQuery = require("@google-cloud/bigquery").BigQuery;
 const bqInstance = new BigQuery();
 
 module.exports = async function insert(lines) {

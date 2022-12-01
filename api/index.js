@@ -1,12 +1,11 @@
 const Koa = require("koa");
+const getAll = require("../repository/getAll");
 
 const application = new Koa();
 
-application.use((context) => {
+application.use(async (context) => {
   context.status = 200;
-  context.body = {
-    message: "API is working!",
-  };
+  context.body = await getAll();
 });
 
 application.listen(3000);
